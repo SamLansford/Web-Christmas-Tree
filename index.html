@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christmas Tree</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<section>
+    <div class="tree"></div>
+</section>
+
+<script>
+    tree = document.querySelector(".tree ");
+    max = 10;
+
+    function branch() {
+        let i;
+        let span
+        for (i = 0; i < max; i++) {
+            span = document.createElement("span");
+            span.style.setProperty("--i", i);
+            console.log(span);
+        }
+    }
+    branch();
+</script>
+
+</body>
+</html>
