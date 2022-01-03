@@ -26,6 +26,10 @@ section {
 
 .tree::before {
     content: '';
+}
+
+.tree::after {
+    content: '';
     width: 440px;
     height: 440px;
     background-color: #0003;
@@ -34,4 +38,23 @@ section {
     top: -100px;
     filter: blur(32px);
     border-radius: 50%;
+}
+
+.tree span {
+    --height: calc(240px - (var(--i) * 2px));
+    display: block;
+    width: 12px;
+    height: var(--height);
+    margin-top: calc(var(--i) * 2px);
+    background-image: linear-gradient(to bottom,
+    #00ff00,
+    #007700,
+    #77dd99);
+    border-radius: 8px;
+    position: absolute;
+    left: calc(50% - 6px);
+    transform:
+            rotateZ(calc(34deg * var(--i)))
+            translateZ(calc(3px * var(--i)));
+
 }

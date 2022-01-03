@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Christmas Tree</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
@@ -15,16 +15,16 @@
 </section>
 
 <script>
-    tree = document.querySelector(".tree ");
-    max = 10;
+    tree = document.querySelector(".tree")
+    max = 120;
+    // let i;
 
     function branch() {
-        let i;
-        let span
+        // let span;
         for (i = 0; i < max; i++) {
-            span = document.createElement("span");
+            span = document.createElement("span")
             span.style.setProperty("--i", i);
-            console.log(span);
+            tree.append(span);
         }
     }
     branch();
