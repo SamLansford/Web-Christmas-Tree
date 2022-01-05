@@ -25,7 +25,8 @@ section {
 }
 
 .tree::before {
-    content: '';
+    content: '⭐';
+    transform: rotateX(-90deg);
 }
 
 .tree::after {
@@ -57,4 +58,14 @@ section {
             rotateZ(calc(34deg * var(--i)))
             translateZ(calc(3px * var(--i)));
 
+}
+
+.tree span::before {
+    display: block;
+    content: '';
+    width: 4px;
+    height: var(--height);
+    background-color: #00aa00;
+    border-radius: 4px;
+    transform: rotateZ(-90deg);
 }
