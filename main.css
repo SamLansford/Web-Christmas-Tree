@@ -26,7 +26,13 @@ section {
 
 .tree::before {
     content: '⭐';
-    transform: rotateX(-90deg);
+    transform:
+        rotateX(-90deg)
+        translate(-365px);
+        position: absolute;
+        font-size: 1rem;
+        left: 474px;
+        top: -800px;
 }
 
 .tree::after {
@@ -68,4 +74,10 @@ section {
     background-color: #00aa00;
     border-radius: 4px;
     transform: rotateZ(-90deg);
+}
+
+@keyframes xmass {
+    from {
+        transform: rotate(80deg);
+    }
 }
