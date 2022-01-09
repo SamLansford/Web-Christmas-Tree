@@ -31,8 +31,8 @@ section {
         translate(-365px);
         position: absolute;
         font-size: 1rem;
-        left: 474px;
-        top: -800px;
+        left: 600px;
+        top: 1200px;
 }
 
 .tree::after {
@@ -48,11 +48,11 @@ section {
 }
 
 .tree span {
-    --height: calc(240px - (var(--i) * 2px));
+    --height: calc(240px - (var(--i)*2px));
     display: block;
     width: 12px;
     height: var(--height);
-    margin-top: calc(var(--i) * 2px);
+    margin-top: calc(var(--i)*1px);
     background-image: linear-gradient(to bottom,
     #00ff00,
     #007700,
@@ -61,8 +61,8 @@ section {
     position: absolute;
     left: calc(50% - 6px);
     transform:
-            rotateZ(calc(34deg * var(--i)))
-            translateZ(calc(3px * var(--i)));
+            rotateZ(calc(34deg*var(--i)))
+            translateZ(calc(3px*var(--i)));
 
 }
 
@@ -78,6 +78,10 @@ section {
 
 @keyframes xmass {
     from {
-        transform: rotate(20deg);
+        transform: rotateX(20deg) rotateZ(0deg);
+    }
+
+    from{
+        transform: rotateX(60deg) rotateZ(360deg);
     }
 }
