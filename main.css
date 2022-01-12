@@ -26,13 +26,12 @@ section {
 
 .tree::before {
     content: '⭐';
-    transform:
-        rotateX(-90deg)
-        translate(-365px);
-        position: absolute;
-        font-size: 1rem;
-        left: 600px;
-        top: 1200px;
+    transform: rotateX(-90deg)
+    translateY(-365px);
+    position: absolute;
+    font-size: 1rem;
+    left: 110px;
+    top: 110px;
 }
 
 .tree::after {
@@ -61,27 +60,28 @@ section {
     position: absolute;
     left: calc(50% - 6px);
     transform:
-            rotateZ(calc(34deg*var(--i)))
-            translateZ(calc(3px*var(--i)));
-
+    rotateZ(calc(34deg * var(--i)))
+    translateZ(calc(3px * var(--i)));
 }
 
-.tree span::before {
+.tree span:before {
     display: block;
     content: '';
     width: 4px;
     height: var(--height);
-    background-color: #00aa00;
+    background-color: #aa5e00;
     border-radius: 4px;
     transform: rotateZ(-90deg);
 }
 
 @keyframes xmass {
     from {
-        transform: rotateX(20deg) rotateZ(0deg);
+        transform: rotateX(60deg)
+        rotateZ(0deg);
     }
 
-    from{
-        transform: rotateX(60deg) rotateZ(360deg);
+    from {
+        transform: rotateX(60deg)
+        rotateZ(360deg);
     }
 }
